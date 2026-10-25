@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="uk"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>Do your chores: діагностувальна робота (7 клас)</title>
+<style>
+:root{--bg:#f6f7fb;--fg:#1c2230;--cd:#fff;--mu:#6b7385;--pr:#2b6cf6;--pl:#e6eeff;--ok:#1f9d55;--no:#d64545;--bd:#d9deea;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#10141c;--fg:#e8ecf5;--cd:#1a2030;--mu:#97a0b5;--pr:#6b9bff;--pl:#22315a;--ok:#4cc982;--no:#ff7a7a;--bd:#2e374c;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#10141c;--fg:#e8ecf5;--cd:#1a2030;--mu:#97a0b5;--pr:#6b9bff;--pl:#22315a;--ok:#4cc982;--no:#ff7a7a;--bd:#2e374c;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box;-webkit-user-select:none;user-select:none;-webkit-touch-callout:none}
+input{-webkit-user-select:text;user-select:text}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:720px;margin:0 auto;padding:16px}
+.card,.q{background:var(--cd);border:1px solid var(--bd);border-radius:14px;padding:16px;margin:12px 0}
+h1{font-size:1.6rem;margin:.2em 0}h2{font-size:1.3rem;margin:.3em 0}h4{margin:14px 0 4px}
+.mu,.ins{color:var(--mu)}.bar{display:flex;justify-content:space-between;color:var(--mu);font-size:.9rem}
+.prog{height:6px;background:var(--bd);border-radius:6px;overflow:hidden;margin:6px 0 14px}.prog i{display:block;height:100%;background:var(--pr)}
+button{font:inherit;color:inherit;cursor:pointer}
+.o{display:block;width:100%;text-align:left;margin:6px 0;padding:11px 12px;min-height:44px;border:1px solid var(--bd);border-radius:10px;background:var(--cd)}
+.w{display:inline-block;margin:3px;padding:8px 10px;min-height:42px;border:1px solid var(--bd);border-radius:9px;background:var(--cd)}
+.s{background:var(--pl);border-color:var(--pr);font-weight:600}
+.nn{display:block;margin:8px 3px 0}
+.pb{display:block;width:100%;margin-top:16px;padding:14px;border:0;border-radius:12px;background:var(--pr);color:#fff;font-weight:700;min-height:48px}
+.pb:disabled{opacity:.45;cursor:not-allowed}
+.bl{display:inline-block;width:3.2em;border-bottom:2px solid var(--fg);margin:0 2px}
+input{width:100%;padding:12px;border:1px solid var(--bd);border-radius:10px;background:var(--cd);color:var(--fg);font:inherit}
+.row{display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--bd)}
+.tot{text-align:center;padding-top:14px}.tot strong{display:block;font-size:2.6rem;color:var(--pr)}
+.sm{font-size:.82rem}.sm ul{padding-left:0;list-style:none;margin:0}.sm li{padding:6px 0;border-bottom:1px solid var(--bd)}
+.y{color:var(--ok)}.x{color:var(--no)}.err{color:var(--no);min-height:1.4em}
+body{background:linear-gradient(180deg,var(--pl),var(--bg) 280px) no-repeat,var(--bg)}
+main{padding:18px 16px 28px}
+.card,.q{box-shadow:0 2px 10px rgba(20,30,60,.07);border-radius:16px}
+.hero{text-align:center;padding:10px 0}.hero span{font-size:3rem}
+.dots{display:flex;gap:6px;margin:8px 0 14px}.dots i{flex:1;height:8px;border-radius:8px;background:var(--bd)}.dots .dn{background:var(--ok)}.dots .cu{background:var(--pr)}
+.hint{font-size:.82rem;color:var(--mu);margin:2px 0 0}
+.qt{font-size:1.05rem;margin:0 0 8px}
+.nm,.bd{display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;border-radius:50%;background:var(--pr);color:#fff;font-size:.85rem;margin-right:6px}
+.bd{width:22px;height:22px;font-size:.8rem}
+.o{display:flex;align-items:center;gap:10px;border-width:2px}.o:active{transform:scale(.99)}
+.lt{flex:none;width:28px;height:28px;border-radius:8px;background:var(--pl);display:inline-flex;align-items:center;justify-content:center;font-size:.85rem}
+.s .lt{background:var(--pr);color:#fff}
+.sen{font-size:1.1rem;margin:0 0 4px}
+.st{margin:14px 0 6px;font-weight:600}.st small{display:block;font-weight:400;color:var(--mu)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:8px}.two .o{justify-content:center;text-align:center}
+.ex{background:var(--pl);border-radius:12px;padding:10px 12px;margin-top:10px;font-size:.9rem}
+.sb{position:sticky;bottom:0;padding:10px 0 calc(8px + env(safe-area-inset-bottom,0px));background:linear-gradient(transparent,var(--bg) 35%)}.sb .pb{margin-top:0}
+.row{flex-wrap:wrap;align-items:center}.rb{display:block;width:100%;height:6px;border-radius:6px;background:var(--bd);margin-top:6px;overflow:hidden}.rb i{display:block;height:100%;background:var(--pr)}
+.w{font-size:1rem}
+@media(min-width:700px){main{padding-top:32px}}
+.em{font-size:2.6rem;letter-spacing:6px}.em i{font-style:normal;display:inline-block;animation:bn 1.8s ease-in-out infinite}.em i:nth-child(2){animation-delay:.2s}.em i:nth-child(3){animation-delay:.4s}.em i:nth-child(4){animation-delay:.6s}
+@keyframes bn{50%{transform:translateY(-10px)}}
+@media(prefers-reduced-motion:reduce){.em i{animation:none}}
+.trk{max-width:420px;margin:0 auto 8px}
+.ln{--f:calc(100% - 4.6rem);position:relative;height:2.3rem;border-bottom:2px dashed var(--bd);margin:2px 0}
+.fl{position:absolute;right:0;bottom:2px;font-style:normal;font-size:1.5rem}
+.rn{position:absolute;left:0;bottom:0;font-size:1.7rem;animation:6s ease-in-out infinite}
+.rn b{display:inline-block;font-weight:400;animation:hp .35s ease-in-out infinite alternate}
+.r1{animation-name:r1}.r2{animation-name:r2}.r3{animation-name:r3}
+@keyframes r1{0%{left:0}90%,100%{left:var(--f)}}
+@keyframes r2{0%{left:0}70%,100%{left:var(--f)}}
+@keyframes r3{0%{left:0}80%,100%{left:var(--f)}}
+@keyframes hp{to{transform:translateY(-4px)}}
+@media(prefers-reduced-motion:reduce){.rn,.rn b{animation:none}}
+.rn b.rl{animation:rl .7s linear infinite}@keyframes rl{to{transform:rotate(360deg)}}
+@media(prefers-reduced-motion:reduce){.rn b.rl{animation:none}}
+.ln{--f:calc(100% - 2.4rem)}.fl{right:auto;left:0}
+@keyframes r1{0%{left:var(--f)}90%,100%{left:2.6rem}}
+@keyframes r2{0%{left:var(--f)}70%,100%{left:2.6rem}}
+@keyframes r3{0%{left:var(--f)}80%,100%{left:2.6rem}}
+@media(prefers-reduced-motion:reduce){.rn{left:var(--f)}}
+</style></head><body><main id="app"></main>
+<style>
+.inl{display:inline-block;width:9.5em;max-width:100%;padding:6px 8px;margin:2px 4px;border-radius:8px;border-width:2px}
+.whi{margin:6px 0}
+.ans{color:var(--mu);margin:4px 0 0}
+.slots{display:flex;flex-wrap:wrap;gap:6px;margin:6px 0 10px}
+.sl{min-width:56px;text-align:center;padding:6px 8px;border:2px dashed var(--bd);border-radius:10px;font-size:.9rem}
+.sl.f{border-style:solid;border-color:var(--pr);background:var(--pl);font-weight:700}
+.rs{font:inherit;color:var(--mu);background:none;border:1px solid var(--bd);border-radius:10px;padding:8px 12px;min-height:40px;margin-top:6px}
+.o .pos{margin-left:auto;color:var(--pr);font-weight:700}
+</style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script>
+const N=6,KEY=[4,0,2,3,1,5],LT="ABCDEF";
+const TK=[
+{t:"mc",h:"Task 1: Choose the correct word",i:"Read each definition and choose the correct option (A, B, C, or D).",q:[
+["You use it to clean the carpets.",["dishwasher","kettle","vacuum cleaner","oven"],2],
+["You use it to make clothes smooth.",["iron","washing machine","mop","microwave"],0],
+["You do it when you clean plates, cups and spoons after a meal.",["do the washing-up","sweep the floor","tidy the room","cook dinner"],0],
+["You do it when you bring food or other things from a shop.",["make the bed","do the shopping","take out the garbage","wash the clothes"],1],
+["You do it when you take the rubbish outside.",["dust the furniture","do the ironing","take out the garbage","feed a pet"],2],
+["You do it when you prepare food.",["wash the dishes","cook","mop the floor","iron the clothes"],1]]},
+{t:"fill",h:"Task 2: Past Simple or Past Continuous",i:"Put the verbs in brackets into the Past Simple or Past Continuous.",q:[
+["While Mum ___ (cook) dinner, Dad ___ (wash) the car.",[["was cooking"],["was washing"]]],
+["I ___ (tidy) my room when my friend ___ (call) me.",[["was tidying"],["called"]]],
+["We ___ (do) the shopping yesterday afternoon.",[["did"]]],
+["My sister ___ (iron) the clothes when the phone ___ (ring).",[["was ironing"],["rang"]]],
+["Alan ___ (break) a cup while he ___ (wash up).",[["broke"],["was washing up","was washing-up"]]],
+["What ___ you ___ (do) at 7 p.m. yesterday?",[["were"],["doing"]]]]},
+{t:"fill",h:"Task 3: Tag questions",i:"Complete the tag questions.",q:[
+["You helped your mum with the chores yesterday, ___?",[["didn't you","did you not"]]],
+["They were cleaning the kitchen at 6 p.m., ___?",[["weren't they","were they not"]]],
+["Jane didn't wash up after dinner, ___?",[["did she"]]],
+["Dad was washing the car at 5 p.m., ___?",[["wasn't he","was he not"]]],
+["We didn't do the shopping last Sunday, ___?",[["did we"]]],
+["The children weren't playing in the garden when it started to rain, ___?",[["were they"]]]]},
+{t:"mc",h:"Task 4: Wh-questions",i:"Choose the correct question for each answer.",q:[
+["— I washed the dishes yesterday.",["What do you did yesterday?","What did you do yesterday?","Where did you wash the dishes yesterday?","What you did yesterday?"],1],
+["— She was cleaning her room when I came home.",["What did she doing when you came home?","What she was doing when you came home?","What was she doing when you came home?","What was she do when you came home?"],2],
+["— They went shopping on Saturday.",["Where did they go shopping?","When did they went shopping?","When they went shopping?","When did they go shopping?"],3],
+["— My dad cooked dinner last night.",["Who cooked dinner last night?","Who cook dinner last night?","Who did cooked dinner last night?","Why did your dad cook dinner last night?"],0],
+["— Ann cleaned her room because it was very dirty.",["Why Ann cleaned her room?","Why did Ann clean her room?","Why did Ann cleaned her room?","When did Ann clean her room?"],1],
+["— Tom was sweeping the floor in the kitchen.",["Where Tom was sweeping the floor?","When was Tom sweeping the floor?","Where was Tom sweeping the floor?","Where did Tom sweeping the floor?"],2]]},
+{t:"ord",h:"Task 5: Put the dialogue in the correct order",i:"Put the dialogue in the correct order.",L:[
+"I was helping Mum in the kitchen yesterday. I wanted to make a cake, but I forgot to add sugar. It didn’t taste good at all!",
+"Then she laughed and said it’s okay, because everyone makes mistakes. We decided to bake another one together. It was much better this time.",
+"Really? Did your mum get angry when she tried it?",
+"No, she didn’t. She was surprised at first, but then she said I was very responsible to cook by myself.",
+"What were you doing yesterday afternoon, Tom?",
+"That’s great! It’s nice when your parents support you, even when something goes wrong."]}];
+const NT=TK.length;
+const $=id=>document.getElementById(id),app=$("app");
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const K=e=>"chores7diag:"+e,ld=e=>{try{return JSON.parse(localStorage.getItem(K(e)))}catch(_){return null}};
+const sv=()=>{try{localStorage.setItem(K(S.e),JSON.stringify(S))}catch(_){}};
+let S=null;
+const nz=s=>String(s||"").toLowerCase().replace(/[’‘`´]/g,"'").replace(/[?.!,;:]/g,"").replace(/\s+/g," ").trim();
+const ex=s=>{const m=s.match(/\[([^\]]*)\]|\(([^)]*)\)/);if(!m)return[s];const a=s.slice(0,m.index),b=s.slice(m.index+m[0].length),o=m[1]!=null?[m[1],""]:m[2].split("|");return o.flatMap(x=>ex(a+x+b))};
+TK.forEach(T=>{if(T.t==="wh")T.q.forEach(q=>{q[2]=[...new Set(q[2].flatMap(ex).map(nz))]})});
+const cm=s=>nz(s).replace(/(\w)n't\b/g,"$1 not");
+const done=(t,i)=>{const T=TK[t],a=S.a[t][i];if(T.t==="mc")return a!=null;if(T.t==="fill")return Array.isArray(a)&&a.length===T.q[i][1].length&&a.every(x=>nz(x));if(T.t==="wh")return !!nz(a);return false};
+const cnt=t=>TK[t].t==="ord"?S.a[t].length:TK[t].q.filter((_,i)=>done(t,i)).length;
+function ok(t,i){const T=TK[t],a=S.a[t][i];
+ if(T.t==="mc")return a===T.q[i][2];
+ if(T.t==="fill")return Array.isArray(a)&&T.q[i][1].every((acc,b)=>acc.map(cm).includes(cm(a[b])));
+ if(T.t==="wh")return T.q[i][2].includes(nz(a));
+ return S.a[t][i]===KEY[i]}
+const pts=t=>Math.round([...Array(N).keys()].filter(i=>ok(t,i)).length*11/N);
+function info(t,i){const T=TK[t],a=S.a[t][i];
+ if(T.t==="mc"){const q=T.q[i];return[q[0],a==null?"(no answer)":q[1][a],q[1][q[2]]]}
+ if(T.t==="fill"){const q=T.q[i];return[q[0].replace(/___/g,"____"),Array.isArray(a)&&a.some(x=>nz(x))?a.map(x=>nz(x)?x.trim():"-").join(" / "):"(no answer)",q[1].map(x=>x[0]).join(" / ")]}
+ if(T.t==="wh"){const q=T.q[i];return["— "+q[0],nz(a)?a.trim():"(no answer)",q[1]]}
+ return["Position "+(i+1),a==null?"(no answer)":LT[a],LT[KEY[i]]]}
+function mq(q,i,a){return`<div class=q><p class=qt><b class=nm>${i+1}</b> ${esc(q[0])}</p>`+q[1].map((o,j)=>`<button class="o${a===j?" s":""}" data-a=o data-i=${i} data-j=${j}><b class=lt>${"ABCD"[j]}</b><span>${esc(o)}</span></button>`).join("")+"</div>"}
+const inp=(i,b,v,m)=>`<input class="inl" type=text data-i=${i} data-b=${b} ${m?"data-m=w ":""}value="${esc(v||"")}" autocomplete=off autocapitalize=off autocorrect=off spellcheck=false>`;
+function fl(q,i,a){const p=q[0].split("___");let h=`<div class=q><p class=sen><b class=nm>${i+1}</b> `;p.forEach((s,b)=>{h+=esc(s);if(b<p.length-1)h+=inp(i,b,Array.isArray(a)?a[b]:"")});return h+"</p></div>"}
+function wq(q,i,a){return`<div class=q><p class=sen><b class=nm>${i+1}</b> Write the question:</p><input type=text data-i=${i} data-m=w value="${esc(a||"")}" autocomplete=off autocapitalize=sentences autocorrect=off spellcheck=false placeholder="..."><p class=ans>— ${esc(q[0])}</p></div>`}
+function oq(T,a){let h=`<div class=q><p class=st>Your order<small>Натискайте на репліки по черзі: перша репліка діалогу — перша. Щоб прибрати репліку, натисніть на неї ще раз.</small></p><div class=slots>`;
+ for(let k=0;k<N;k++)h+=`<span class="sl${a[k]!=null?" f":""}">${k+1}. ${a[k]!=null?LT[a[k]]:"–"}</span>`;
+ h+=`</div>`;T.L.forEach((l,j)=>{const p=a.indexOf(j);h+=`<button class="o${p>=0?" s":""}" data-a=p data-j=${j}><b class=lt>${LT[j]}</b><span>${esc(l)}</span>${p>=0?`<span class=pos>${p+1}</span>`:""}</button>`});
+ return h+`<button class=rs data-a=rs>Скинути порядок</button></div>`}
+const UK=["Прочитайте кожне речення й оберіть правильний варіант (A, B, C або D).","Впишіть дієслова з дужок у Past Simple або Past Continuous.","Допишіть розділові питання (tag questions).","Для кожної відповіді оберіть правильне питання (A, B, C або D).","Розташуйте репліки діалогу в правильному порядку."];
+function sbh(t,n){return`<button class=pb data-a=nx ${n<N?"disabled":""}>${t<NT-1?"Далі":"Отримати результати"}</button>${n<N?`<p class=hint>Дайте відповідь на всі питання, щоб продовжити (залишилось: ${N-n}).</p>`:""}`}
+function upd(){const t=S.t,n=cnt(t),c=$("cn"),s=$("sb");if(c)c.textContent="Виконано: "+n+"/"+N;if(s)s.innerHTML=sbh(t,n)}
+function draw(){
+ if(!S){app.innerHTML=`<div class=hero><div class=em><i>🧹</i><i>🧺</i><i>🍽️</i><i>🧽</i></div><h1>Вітаємо!</h1></div><p>Сьогодні ви проходитимете діагностувальну роботу з англійської мови на тему «Do your chores».</p><div class=card><b>Коротка інструкція</b><ul><li>Тест можна пройти лише 1 раз. Реєстрація на тест за електронною адресою.</li><li>Тест містить 5 завдань, у кожному завданні 6 питань.</li><li>Кожне завдання оцінюється в 11 балів.</li><li>Підсумкова оцінка — це середня оцінка з усіх 5 завдань.</li><li>Якщо не вдалося зберегти PDF, поверніться на цю сторінку й увійдіть з тією самою електронною адресою — результат буде збережено.</li></ul></div><label for=nm><b>Ім’я та прізвище</b> <small class=mu>(англійською мовою)</small></label><input id=nm type=text autocomplete=off autocapitalize=words placeholder="Ivan Petrenko" style="margin:6px 0 14px"><label for=em><b>Ваша електронна адреса</b></label><input id=em type=email inputmode=email autocomplete=off placeholder="name@example.com"><p class=err id=er></p><button class=pb data-a=go>Почати тест</button>`;return}
+ if(S.done)return res();
+ const t=S.t,T=TK[t],n=cnt(t),a=S.a[t];
+ app.innerHTML=`<div class=bar><span>Завдання ${t+1} з ${NT}</span><span id=cn>Виконано: ${n}/${N}</span></div><div class=dots>${TK.map((_,k)=>`<i class="${k<t?"dn":k===t?"cu":""}"></i>`).join("")}</div><div class=card><h2>${T.h}</h2><p class=ins>${T.i}</p><p class=hint>${UK[t]}</p></div>`+(T.t==="ord"?oq(T,a):T.q.map((q,i)=>T.t==="mc"?mq(q,i,a[i]):T.t==="fill"?fl(q,i,a[i]):wq(q,i,a[i])).join(""))+`<div class=sb id=sb>${sbh(t,n)}</div>`}
+function res(){const P=TK.map((_,t)=>pts(t)),tot=Math.round(P.reduce((a,b)=>a+b,0)/NT);
+ let h=`<h2>Ваш результат</h2><p class=mu>${esc(S.n||"")}</p><div class=card>`+P.map((p,t)=>`<div class=row><span>Завдання ${t+1}</span><b>${p} / 11</b><u class=rb><i style="width:${p/11*100}%"></i></u></div>`).join("")+`<div class=tot>Загальна оцінка<strong>${tot} / 11</strong></div><div class=sm>`;
+ TK.forEach((T,t)=>{h+=`<h4>${T.h}</h4><ul>`+[...Array(N).keys()].map(i=>{const[s,u,c]=info(t,i),g=ok(t,i);return`<li><span class=${g?"y":"x"}>${g?"✓":"✗"}</span> ${i+1}. ${esc(s)}<br>Ваша відповідь: ${esc(u)}${g?"":`<br>Правильна відповідь: <span class=y>${esc(c)}</span>`}</li>`}).join("")+"</ul>"});
+ app.innerHTML=h+`</div></div><button class=pb data-a=pdf>Відправити результат вчителю у Class</button><p class=mu id=msg>Натисніть кнопку, збережіть PDF і прикріпіть його до завдання в Google Classroom.</p>`}
+const msg=s=>{const m=$("msg");if(m)m.textContent=s};
+async function pdf(){const J=window.jspdf&&window.jspdf.jsPDF;if(!J)return msg("Не вдалося завантажити модуль PDF. Перевірте інтернет і спробуйте ще раз.");
+ const d=new J({unit:"mm",format:"a4"});let y=15;const A=s=>String(s).replace(/[’‘]/g,"'").replace(/[“”]/g,'"');
+ const L=(s,z=10,b)=>{d.setFont("helvetica",b?"bold":"normal");d.setFontSize(z);d.splitTextToSize(A(s),180).forEach(l=>{if(y>282){d.addPage();y=15}d.text(l,15,y);y+=z*.5+1.5})};
+ const P=TK.map((_,t)=>pts(t)),tot=Math.round(P.reduce((a,b)=>a+b,0)/NT);
+ L("Diagnostic Test: Do your chores (Grade 7)",16,1);L("Student: "+(S.n||"-"));L("Student email: "+S.e);L("Date: "+new Date().toISOString().slice(0,10));y+=3;
+ L("Total grade: "+tot+" / 11",14,1);P.forEach((p,t)=>L("Task "+(t+1)+": "+p+" / 11"));
+ TK.forEach((T,t)=>{y+=4;L(T.h,11,1);for(let i=0;i<N;i++){const[s,u,c]=info(t,i),g=ok(t,i);L((g?"[OK] ":"[X] ")+(i+1)+". "+s,9);L("   Answer: "+u+(g?"":"   |   Correct: "+c),9)}});
+ const fn="chores-test-"+S.e.split("@")[0].replace(/[^a-z0-9]/gi,"_")+".pdf";let dl=null;
+ try{dl=window.claude?await window.claude.use("downloads"):null}catch(_){}
+ if(dl){try{await dl.save({filename:fn,data:d.output("blob")});msg("PDF збережено. Прикріпіть його до завдання в Google Classroom.")}catch(e){msg(e&&e.code==="declined"?"Збереження скасовано. Натисніть кнопку ще раз.":"Не вдалося зберегти PDF. Спробуйте ще раз.")}}
+ else{try{d.save(fn);msg("PDF збережено. Прикріпіть його до завдання в Google Classroom.")}catch(_){msg("Не вдалося зберегти PDF.")}}}
+function start(){const nm=$("nm").value.trim().replace(/\s+/g," "),e=$("em").value.trim().toLowerCase();
+ if(!/^[A-Za-z][A-Za-z’'.-]*( [A-Za-z][A-Za-z’'.-]*)+$/.test(nm))return $("er").textContent="Введіть ім’я та прізвище англійською мовою (наприклад, Ivan Petrenko).";
+ if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(e))return $("er").textContent="Введіть правильну електронну адресу.";
+ S=ld(e)||{e,n:nm,t:0,done:false,a:TK.map(T=>T.t==="ord"?[]:Array(N).fill(null))};sv();draw()}
+app.onclick=e=>{const b=e.target.closest("button");if(!b)return;const d=b.dataset,i=+d.i;
+ if(d.a==="go")return start();if(d.a==="pdf")return pdf();if(!S)return;const t=S.t;
+ if(d.a==="o")S.a[t][i]=+d.j;
+ else if(d.a==="p"){const j=+d.j,a=S.a[t],p=a.indexOf(j);if(p>=0)a.splice(p,1);else if(a.length<N)a.push(j)}
+ else if(d.a==="rs")S.a[t]=[];
+ else if(d.a==="nx"){if(cnt(t)<N)return;if(t<NT-1)S.t++;else S.done=true;sv();draw();return scrollTo(0,0)}else return;
+ sv();draw()};
+app.oninput=e=>{const x=e.target;if(!S||x.dataset.i==null||x.id==="nm"||x.id==="em")return;const t=S.t,i=+x.dataset.i;
+ if(x.dataset.m==="w")S.a[t][i]=x.value;else{let a=S.a[t][i];if(!Array.isArray(a))a=S.a[t][i]=Array(TK[t].q[i][1].length).fill("");a[+x.dataset.b]=x.value}
+ sv();upd()};
+app.onkeydown=e=>{if(e.key==="Enter"&&e.target.id==="em")start()};
+["copy","cut","contextmenu","selectstart","dragstart"].forEach(n=>document.addEventListener(n,e=>{if(e.target.tagName!=="INPUT")e.preventDefault()}));
+document.addEventListener("keydown",e=>{if((e.ctrlKey||e.metaKey)&&"cxaspu".includes(e.key.toLowerCase())&&e.target.tagName!=="INPUT")e.preventDefault()});
+draw();
+</script></body></html>
